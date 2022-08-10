@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>"Магазин функционального питания для котов"</title>
+</head>
+
+<body class="form-body">
+  <header class="main-header">
+    <a class="main-header__logo" href="#">
+      <img src="source/img/logo.svg" width="202px" height="59px" alt="">
+    </a>
+    <div class="main-nav__wrapper">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list list-reset">
+        <li class="main-nav__item main-nav__item--current">
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="form-container">
+
+    <h1 class="form-container__title">Подбор программы</h1>
+
+    <form class="form-container__form form" action="https://echo.htmlacademy.ru/" method="get">
+      <header class="form__header">
+        Заполните анкету, и мы подберем<br>программу питания для вашего кота
+      </header>
+      <fieldset class="form__cat-parameters">
+        <legend class="visually-hidden">Данные питомца</legend>
+        <label>
+          Имя:*
+          <input class="form__text-input" type="text" name="cat-name" placeholder="Барсик">
+        </label>
+        <label>
+          Вес (кг):*
+          <input class="form__text-input" type="text" name="cat-weight" placeholder="7">
+        </label>
+        <label>
+          Возраст (лет):
+          <input class="form__text-input" type="text" name="cat-age" placeholder="7">
+        </label>
+        <div class="form-radio">
+          <label>
+            <input class="form__radio" type="radio" name="weight-loss" checked>
+            Похудение
+          </label>
+          <label>
+            <input class="form__radio" type="radio" name="weight-gain">
+            Набор массы
+          </label>
+          <label>
+            <input class="form__radio" type="radio" name="unknown">
+            Не знаю (Нужен ваш совет)
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="form__owner-contacts">
+        <legend>Контактные данные (владельца кота)</legend>
+        <label>
+          E-mail:*
+          <input class="form__text-input" type="text" name="e-mail" placeholder="кuklachev@gmail.com">
+          Телефон:*
+          <input class="form__text-input" type="text" name="telephone" placeholder="8 (960) 900-60-90">
+        </label>
+      </fieldset>
+      <fieldset class="form__comment">
+        <legend>Комментарий</legend>
+        <textarea name="owner-comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </fieldset>
+      <fieldset class="form__additionally">
+        <legend>Дополнительно</legend>
+        <label>
+          <input class="form__checkbox" type="checkbox" name="sweetener" checked>
+          Сахарозаминитель
+        </label>
+        <label>
+          <input class="form__checkbox" type="checkbox" name="water">
+          Питьевая вода
+        </label>
+        <label>
+          <input class="form__checkbox" type="checkbox" name="milk">
+          Молоко
+        </label>
+        <label>
+          <input class="form__checkbox" type="checkbox" name="vitamins">
+          Витамины
+        </label>
+      </fieldset>
+      <button class="form__button button" type="submit">
+        <span>отправить заявку</span>
+      </button>
+      <span>* — Обязательные поля</span>
+    </form>
+
+    <section class="location">
+      <div class="location__wrapper">
+        <img src="source/img/map.png" width="" height="400px" alt="карта с местонахождением">
+        <div class="location__contacts map-contacts">
+          <p class="map-contacts__slogan">Приглашаем к сотрудничеству диллеров</p>
+          <address class="map-contacts-address">
+            <p>ул. Большая Конюшенная, д. 19/8<br><br>Санкт-Петербург</p>
+          </address>
+          <img src="source/img/map-pin.svg" width="113px" height="106px" alt="местоположение на карте">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="#">
+        <img src="source/img/footer-logo.svg" width="128px" height="24px" alt="логотип магазина">
+      </a>
+      <div class="page-footer__social social">
+        <b class="visually-hidden">Мы в социальных сетях</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">Мы Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы на Ютуб</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="#">Мы в Телеграм</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="#">HTML academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
