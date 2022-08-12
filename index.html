@@ -9,7 +9,7 @@
 <body class="page-body">
   <header class="main-header">
     <a class="main-header__logo" href="#">
-      <img src="source/img/logo.svg" width="202px" height="59px" alt="">
+      <img src="source/img/logo.svg" width="202" height="59" alt="логотип магазина">
     </a>
     <div class="main-nav__wrapper">
       <button class="main-nav__toggle" type="button">
@@ -51,7 +51,7 @@
         <button class="promo__button button" type="button">
           <span>Подобрать программу</span>
         </button>
-        <img src="source/img/index-can.png" width="552px" height="499px" alt="">
+        <img src="source/img/index-can.png" width="552" height="499" alt="изображение продукта">
       </div>
     </section>
 
@@ -113,7 +113,7 @@
 
     <section class="guide">
       <div class="guide__wrapper">
-        <h2 сlass="guide__title">Как это работает</h2>
+        <h2 class="guide__title">Как это работает</h2>
         <ul class="guide__list list-reset">
           <li class="guide__item guide-content">
             <div class="giude-content__wrapper">
@@ -121,7 +121,7 @@
               </span>
               <p class="guide-content__description">
                 Функциональное питание
-               содержит только полезные
+                содержит только полезные
                 питательные вещества.
               </p>
               <span class="guide-content__number">1</span>
@@ -185,13 +185,16 @@
               <dt class="stats__value">60 дней</dt>
               <dd class="stats__description">затрачено времени</dd>
             </div>
-            <dd class="stats__description">Затраты на питание:</dd>
-            <dt class="stats__value">15 000 РУБ.</dt>
+            <div class="stats__item stats__item--without-border">
+              <dt class="stats__value--without-border">15 000 РУБ.</dt>
+              <dd class="stats__description--without-border">Затраты на питание:</dd>
+              <!--здесь значение и термин поменяются местами с помощью свойства order-->
+            </div>
           </dl>
         </div>
         <div class="effect__demonstration demonstration">
-          <img src="source/img/cat-fat.png" width="677px" height="520px" alt="кот с ожирением">
-          <img src="source/img/cat-skinny.png" width="545px" height="520px" alt="худой кот">
+          <img src="source/img/cat-fat.png" width="677" height="520" alt="кот с ожирением">
+          <img src="source/img/cat-skinny.png" width="545" height="520" alt="худой кот">
           <div class="demonstration__range-scale range-scale">
             <button class="range-scale__range-toggle">
               <span class="visually-hiddden">изменить внешний вид кота</span>
@@ -203,13 +206,14 @@
 
     <section class="location">
       <div class="location__wrapper">
-        <img src="source/img/map.png" width="" height="400px" alt="карта с местонахождением">
+        <h2 class="visually-hidden">Наше местоположение</h2>
+        <img src="source/img/map.png" width="1440" height="400" alt="карта с местонахождением">
         <div class="location__contacts map-contacts">
           <p class="map-contacts__slogan">Приглашаем к сотрудничеству диллеров</p>
           <address class="map-contacts-address">
             <p>ул. Большая Конюшенная, д. 19/8<br><br>Санкт-Петербург</p>
           </address>
-          <img src="source/img/map-pin.svg" width="113px" height="106px" alt="местоположение на карте">
+          <img src="source/img/map-pin.svg" width="113" height="106" alt="местоположение на карте">
         </div>
       </div>
     </section>
@@ -218,7 +222,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <a class="page-footer__logo" href="#">
-        <img src="source/img/footer-logo.svg" width="128px" height="24px" alt="логотип магазина">
+        <img src="source/img/footer-logo.svg" width="128" height="24" alt="логотип магазина">
       </a>
       <div class="page-footer__social social">
         <b class="visually-hidden">Мы в социальных сетях</b>
