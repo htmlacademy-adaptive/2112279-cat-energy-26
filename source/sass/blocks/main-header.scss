@@ -1,0 +1,30 @@
+.main-header {
+  width: 1220px;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba($color: #ffffff, $alpha: 0);
+
+  &--index {
+    margin-bottom: 32px;
+  }
+
+  &--form {
+    margin-bottom: 74px;
+  }
+
+  &--catalog {
+    margin-bottom: 74px;
+  }
+
+  .main-header__logo {
+    &:hover {
+      opacity: $logo-hover;
+    }
+
+    &:active {
+      opacity: $logo-pressed;
+    }
+  }
+}

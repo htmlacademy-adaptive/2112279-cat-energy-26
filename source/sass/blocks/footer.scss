@@ -1,0 +1,61 @@
+.page-footer {
+  width: 1440px;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+}
+
+.page-footer__wrapper {
+  width: 1220px;
+  height: 149px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__logo {
+  &:hover {
+    opacity: $logo-hover;
+  }
+
+  &:active {
+    opacity: $logo-pressed;
+  }
+}
+
+.social__list {
+  display: flex;
+  gap: 24px;
+}
+
+.social__link {
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:active path {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+}
+
+.copyright__link {
+  @include arial-text;
+  line-height: 18px;
+  color: #444444;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active path {
+    fill: #68b738;
+  }
+}

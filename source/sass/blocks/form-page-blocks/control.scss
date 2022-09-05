@@ -1,0 +1,47 @@
+.control {
+  position: relative;
+  display: block;
+  padding-left: 60px;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.control-mark--radio {
+  border-radius: 50%;
+}
+
+.control-label {
+  vertical-align: middle;
+}
+
+.control-input[type="radio"]:checked + .control-mark--radio::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #68b738;
+}
+
+.control:hover .control-mark {
+  border: 1px solid #bababa;
+}
+
+.control-input:disabled .control {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark--checkbox {
+  background-image: url("../../../img/checkbox-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

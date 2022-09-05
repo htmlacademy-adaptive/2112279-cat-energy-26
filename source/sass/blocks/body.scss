@@ -1,0 +1,33 @@
+.page-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1440px;
+  margin: 0 auto;
+
+  &--index {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 720px;
+      height: 694px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background: url("../../img/background-cat.jpg");
+    }
+
+    &::after {
+      content: "";
+      width: 720px;
+      height: 694px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: rgba(104, 183, 56, 0.85);
+    }
+  }
+}

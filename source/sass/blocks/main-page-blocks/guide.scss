@@ -1,0 +1,84 @@
+.guide__wrapper {
+  width: 1220px;
+  margin: 0 auto;
+}
+
+.guide__title {
+  @include title;
+  margin-bottom: 32px;
+}
+
+.guide__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guide-content__wrapper {
+  min-height: 280px;
+  position: relative;
+  margin-bottom: 23px;
+
+  &--step-one {
+    min-width: 230px;
+  }
+
+  &--step-two {
+    width: 246px;
+  }
+
+  &--step-three {
+    width: 247px;
+  }
+
+  &--step-four {
+    width: 249px;
+  }
+
+  // задаёт общие стили для декоративного блока
+  .guide-content__icon-backing {
+    display: block;
+    position: absolute;
+    top: 40px;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $base-color;
+
+    // добавляет каждому блоку своё изображение
+    &--step-one {
+      background-image: url("../../../img/icon-leaf.svg");
+    }
+
+    &--step-two {
+      background-image: url("../../../img/icon-tube.svg");
+    }
+
+    &--step-three {
+      background-image: url("../../../img/icon-eat.svg");
+    }
+
+    &--step-four {
+      background-image: url("../../../img/icon-alarm.svg");
+    }
+  }
+
+  .guide-content__description {
+    @include arial-text;
+    display: inline-block;
+    margin-top: 151px;
+    color: #444444;
+  }
+
+  .guide-content__number {
+    font-family: $oswald;
+    font-size: 280px;
+    line-height: 280px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+}
+

@@ -1,0 +1,11 @@
+.product__wrapper {
+  width: 1220px;
+  margin: 0 auto;
+}
+
+.product__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 63px 80px;
+  margin-bottom: 75px;
+}

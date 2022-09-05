@@ -1,0 +1,23 @@
+.additionaly {
+  margin: 0 auto;
+  margin-bottom: 61px;
+
+  .additionaly__content {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.additionaly__list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 24px;
+
+  .additionaly__item {
+    width: 221px;
+
+    .control-label {
+      color: #000000;
+    }
+  }
+}

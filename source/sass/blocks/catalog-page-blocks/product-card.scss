@@ -1,0 +1,132 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 245px;
+  height: 511px;
+  background: linear-gradient(rgba(255, 255, 255, 0) 15.66%, rgb(242, 242, 242) 15.66% 100%);
+
+  &--small {
+    .product-card__image {
+      margin-top: 28px;
+      margin-bottom: 46px;
+    }
+  }
+
+  &--large {
+    .product-card__image {
+      margin-top: 1px;
+      margin-bottom: 46px;
+    }
+  }
+
+  .product-card__title {
+    font-family: $oswald;
+    font-size: 20px;
+    line-height: 21px;
+    width: 145px;
+    padding-left: 20px;
+    padding-right: 15px;
+    margin-bottom: 14.25px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .product-card__list {
+    margin: 0;
+    margin-bottom: 33px;
+  }
+
+  .product-card__item {
+    @include arial-text;
+    display: flex;
+    justify-content: space-between;
+    line-height: 16px;
+    color: #444444;
+    width: 169px;
+    height: 31.92px;
+    border-bottom: 1px solid #cdcdcd;
+    box-sizing: border-box;
+
+    .product-card__description {
+      line-height: 30px;/*центрирует текст по вертикали*/
+    }
+
+    .product-card__value {
+      line-height: 30px;/*центрирует текст по вертикали*/
+    }
+  }
+
+  .product-card__button {
+    padding: 10px 53px;
+  }
+}
+
+.show-more-card {
+  position: relative;
+}
+
+.show-more-card__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 245px;
+  height: 431px;
+  padding: 159px 37px 39px;
+  border: 2px solid #f2f2f2;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+
+  .show-more-card__cross {
+    position: absolute;
+    top: 51px;
+    left: 92px;
+
+    &::before {
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: #d3d3d3;
+      position: absolute;
+    }
+
+    &::after {
+      content: "";
+      width: 60px;
+      height: 2px;
+      background-color: #d3d3d3;
+      position: absolute;
+      transform: rotate(90deg);
+    }
+  }
+
+  .show-more-card__title {
+    font-family: $oswald;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 23px;
+  }
+
+  .show-more-card__description {
+    @include arial-text;
+    line-height: 18px;
+    color: #444444;
+    text-align: center;
+    margin-bottom: 87px;
+  }
+
+  .show-more-card__button {
+    padding: 10px 36px;
+    color: #444444;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active span {
+      opacity: 0.3;
+    }
+  }
+}
