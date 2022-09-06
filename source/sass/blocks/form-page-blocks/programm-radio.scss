@@ -1,0 +1,17 @@
+.programm-radio {
+  width: 568px;
+  border: 1px solid $input-border-color;
+
+  .programm-radio__list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    padding-top: 25px;
+    padding-bottom: 29px;
+    padding-left: 28px;
+  }
+
+  .programm-radio__item {
+    height: 40px;
+  }
+}

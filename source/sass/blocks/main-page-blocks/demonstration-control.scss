@@ -1,3 +1,4 @@
+
 .demonstration-control__wrapper {
   position: relative;
   max-width: 592px;
@@ -15,7 +16,7 @@
     content: "было";
     position: absolute;
     left: 10px;
-    border-bottom: 1px dotted #dcdcdc;
+    border-bottom: 1px dotted $basic-grey;
   }
 
   &::after {
@@ -35,7 +36,7 @@
   }
 
   &:active .demonstration-control__range-toggle {
-    border-color: $base-color;
+    border-color: $base-green;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   }
 
@@ -48,7 +49,7 @@
     position: absolute;
     width: 426px;
     height: 6px;
-    background-color: #dcdcdc;
+    background-color: $basic-grey;
     border-radius: 6px;
   }
 
@@ -56,8 +57,8 @@
     position: absolute;
     width: 34px;
     height: 34px;
-    background-color: #ffffff;
-    border: 1px solid #cdcdcd;
+    background-color: $basic-white;
+    border: 1px solid $basic-grey;
     border-radius: 50%;
     box-sizing: border-box;
     top: -14px;
@@ -74,7 +75,7 @@
       margin-left: -4px;
       width: 8px;
       height: 8px;
-      background-color: $base-color;
+      background-color: $base-green;
       border-radius: 50%;
     }
   }

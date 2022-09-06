@@ -7,14 +7,14 @@
     margin: 0 auto;
   }
 
-  .comment-textarea {
+  .comments__textarea {
     padding: 10px 19px;
     box-sizing: border-box;
     width: 1220px;
     height: 174px;
     outline: none;
     resize: none;
-    border: 1px solid #e7e7e7;
+    border: 1px solid $input-border-color;
     font-family: $oswald;
     font-size: 20px;
     line-height: 30px;

@@ -11,7 +11,7 @@
 }
 
 .programm-content {
-  background-color: #f2f2f2;
+  background-color: $light-grey;
   padding-top: 77px;
   padding-bottom: 55px;
   position: relative;
@@ -79,7 +79,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: $base-color;
+    background-color: $base-green;
     left: 52px;
     top: 47px;
   }

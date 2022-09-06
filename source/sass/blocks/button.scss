@@ -6,15 +6,15 @@ button {
 }
 
 .button--primary {
-  background-color: #68b738;
-  color: #ffffff;
+  background-color: $base-green;
+  color: $basic-white;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $dark-green;
   }
 
   &:active {
-    background-color: #5eaa2f;
-    color: rgba($color: #ffffff, $alpha: 0.3);
+    background-color: $dark-green;
+    color: rgba($color: $basic-white, $alpha: 0.3);
   }
 }

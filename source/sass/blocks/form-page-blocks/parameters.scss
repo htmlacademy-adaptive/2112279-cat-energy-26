@@ -1,0 +1,25 @@
+.parameters {
+  width: 569px;
+
+  .parameters__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .parameters__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .parameters__text-input {
+    box-sizing: border-box;
+    height: 52px;
+    border: 1px solid $input-border-color;
+    flex-grow: 1;
+  }
+
+  label {
+    margin-right: 14px;
+  }
+}

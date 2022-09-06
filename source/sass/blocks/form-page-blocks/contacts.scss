@@ -49,6 +49,6 @@
 .text-input--contacts {
   height: 50px;
   box-sizing: border-box;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $input-border-color;
   flex-grow: 1;
 }

@@ -5,39 +5,6 @@
   position: relative;
 }
 
-.map-contacts {
-  width: 565px;
-  height: 198px;
-  background-color: #ffffff;
-  padding: 56px 80px;
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  position: absolute;
-  top: 95px;
-  left: 110px;
-
-  p {
-    margin: 0;
-  }
-
-  .map-contacts__slogan {
-    font-family: $oswald;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: uppercase;
-    width: 163px;
-  }
-
-  .map-contacts__address {
-    @include arial-text;
-    line-height: 20px;
-    font-style: normal;
-    color: #444444;
-    width: 155px;
-  }
-}
-
 .location__pin {
   position: absolute;
   top: 131px;
