@@ -1,0 +1,15 @@
+.social__list {
+  display: flex;
+  gap: 24px;
+}
+
+.social__link {
+  &:hover path {
+    fill: $base-green;
+  }
+
+  &:active path {
+    fill: $base-green;
+    opacity: 0.3;
+  }
+}

@@ -1,0 +1,9 @@
+.header-logo {
+  &:hover {
+    opacity: $logo-hover;
+  }
+
+  &:active {
+    opacity: $logo-pressed;
+  }
+}

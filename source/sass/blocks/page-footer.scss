@@ -1,0 +1,14 @@
+.page-footer {
+  width: 1440px;
+  background-color: $light-grey;
+  margin: 0 auto;
+}
+
+.page-footer__wrapper {
+  width: 1220px;
+  height: 149px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

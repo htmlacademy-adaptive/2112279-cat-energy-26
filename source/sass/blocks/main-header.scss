@@ -1,0 +1,20 @@
+.main-header {
+  width: 1220px;
+  margin: 0 auto;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba($color: $basic-white, $alpha: 0);
+
+  &--index {
+    margin-bottom: 32px;
+  }
+
+  &--form {
+    margin-bottom: 74px;
+  }
+
+  &--catalog {
+    margin-bottom: 74px;
+  }
+}
