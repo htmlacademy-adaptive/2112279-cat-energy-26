@@ -6,4 +6,8 @@
   &:active {
     opacity: $logo-pressed;
   }
+
+  &--large-viewport {
+    display: none;
+  }
 }
