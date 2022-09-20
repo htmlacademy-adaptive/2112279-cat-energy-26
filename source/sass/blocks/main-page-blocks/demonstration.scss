@@ -1,5 +1,5 @@
 .demonstration {
-  width: 591px;
+  width: 280px;
   position: relative;
 
   .demonstration__image {
@@ -14,3 +14,22 @@
     }
   }
 }
+
+//десктопные стили
+
+// .demonstration {
+//   width: 591px;
+//   position: relative;
+
+//   .demonstration__image {
+//     &--fat {
+//       margin-bottom: 25px;
+//     }
+
+//     &--skinny {
+//       position: absolute;
+//       top: 0;
+//       right: 0;
+//     }
+//   }
+// }

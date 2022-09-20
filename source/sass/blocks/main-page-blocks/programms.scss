@@ -1,48 +1,52 @@
-.programms__wrapper {
-  width: 1220px;
+.programm {
+  width: 320px;
   margin: 0 auto;
-  margin-bottom: 71px;
+}
 
-  .programms__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 80px;
-  }
+.programms__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .programm-content {
   background-color: $light-grey;
-  padding-top: 77px;
-  padding-bottom: 55px;
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 18px;
   position: relative;
 
   .programm-content__title {
     font-family: $oswald;
-    font-size: 36px;
+    font-size: 24px;
+    line-height: 37px;
     text-transform: uppercase;
     margin: 0;
-    margin-left: 214px;
-    margin-bottom: 73px;
-    line-height: 36px;
+    margin-left: 91px;
+    margin-bottom: 29px;
   }
 
   .programm-content__info {
     @include arial-text;
-    margin-left: 52px;
-    margin-bottom: 23px;
+    margin: 0 20px;
+    padding-bottom: 23px;
+    font-size: 14px;
+    line-height: 18px;
+    border-bottom: 1px solid #d9d9d9;
+    box-sizing: border-box;
   }
 
   .programm-content__link {
     font-family: $oswald;
-    font-size: 20px;
-    margin-left: 52px;
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 19px;
+    margin-top: 15px;
     text-transform: uppercase;
-    line-height: 30px;
     display: flex;
     align-items: center;
 
     svg {
-      margin-left: 27px;
+      margin-left: 15px;
     }
 
     &:hover svg {
@@ -58,29 +62,137 @@
 
 .programm-content__icon {
   &--weight-loss {
+    position: absolute;
+    top: 21px;
+    left: 22px;
+    width: 50px;
+    height: 53px;
+
     svg {
       position: absolute;
-      left: 67px;
-      top: 41px;
+      left: 7px;
     }
   }
 
   &--weight-gain {
+    position: absolute;
+    top: 24px;
+    left: 13px;
+    width: 67px;
+    height: 50px;
+
     svg {
       position: absolute;
-      left: 33px;
-      top: 67px;
+      top: 11px;
     }
   }
 
-  .icon-backing--programm {
-    display: block;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: $base-green;
-    left: 52px;
-    top: 47px;
+  .icon-backing {
+    &--programm {
+      display: block;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $base-green;
+    }
+
+    &--weight-loss {
+      position: absolute;
+      top: 3px;
+    }
+
+    &--weight-gain {
+      position: absolute;
+      left: 9.5px;
+    }
   }
 }
+
+//десктопные стили
+// .programms__wrapper {
+//   width: 1220px;
+//   margin: 0 auto;
+//   margin-bottom: 71px;
+
+//   .programms__list {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-gap: 80px;
+//   }
+// }
+
+// .programm-content {
+//   background-color: $light-grey;
+//   padding-top: 77px;
+//   padding-bottom: 55px;
+//   position: relative;
+
+//   .programm-content__title {
+//     font-family: $oswald;
+//     font-size: 36px;
+//     text-transform: uppercase;
+//     margin: 0;
+//     margin-left: 214px;
+//     margin-bottom: 73px;
+//     line-height: 36px;
+//   }
+
+//   .programm-content__info {
+//     @include arial-text;
+//     margin-left: 52px;
+//     margin-bottom: 23px;
+//   }
+
+//   .programm-content__link {
+//     font-family: $oswald;
+//     font-size: 20px;
+//     margin-left: 52px;
+//     text-transform: uppercase;
+//     line-height: 30px;
+//     display: flex;
+//     align-items: center;
+
+//     svg {
+//       margin-left: 27px;
+//     }
+
+//     &:hover svg {
+//       width: 32px;
+//       height: 10px;
+//     }
+
+//     &:active {
+//       opacity: 0.3;
+//     }
+//   }
+// }
+
+// .programm-content__icon {
+//   &--weight-loss {
+//     svg {
+//       position: absolute;
+//       left: 67px;
+//       top: 41px;
+//     }
+//   }
+
+//   &--weight-gain {
+//     svg {
+//       position: absolute;
+//       left: 33px;
+//       top: 67px;
+//     }
+//   }
+
+//   .icon-backing--programm {
+//     display: block;
+//     position: absolute;
+//     width: 100px;
+//     height: 100px;
+//     border-radius: 50%;
+//     background-color: $base-green;
+//     left: 52px;
+//     top: 47px;
+//   }
+// }
