@@ -6,4 +6,22 @@
   &:active {
     opacity: $logo-pressed;
   }
+
+  &--large-viewport {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header-logo--large-viewport {
+    display: block;
+  }
+
+  .header-logo--mobile {
+    display: none;
+  }
+
+  .header-logo--mobile-text {
+    display: none;
+  }
 }
