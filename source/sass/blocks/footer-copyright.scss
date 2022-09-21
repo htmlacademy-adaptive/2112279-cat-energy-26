@@ -25,3 +25,14 @@
     fill: $base-green;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+    border: none;
+  }
+
+  .copyright__link {
+    gap: 22px;
+  }
+}

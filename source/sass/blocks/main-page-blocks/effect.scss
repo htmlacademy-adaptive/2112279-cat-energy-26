@@ -10,6 +10,19 @@
   padding-bottom: 40px;
 }
 
+
+@media (min-width: $tablet-width) {
+  .effect {
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0) 55.5%, rgb(242, 242, 242) 55.5%, rgb(242, 242, 242) 100%);
+  }
+
+  .effect__wrapper {
+    width: 708px;
+    padding-top: 0;
+    padding-bottom: 101px;
+  }
+}
 //десктопные стили
 
 // .effect {

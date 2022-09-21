@@ -33,6 +33,31 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .page-body {
+    width: 1440px;
+  }
+
+  .cat-background {
+    display: block;
+    width: 720px;
+    height: 694px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+
+    .cat-background__overlay {
+      width: 720px;
+      height: 694px;
+    }
+
+    .cat-background__image {
+      width: 720px;
+      height: 694px;
+    }
+  }
+}
+
 // &::before {
 //   content: "";
 //   width: 720px;

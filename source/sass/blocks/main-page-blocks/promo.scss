@@ -48,7 +48,6 @@
 
   .promo__wrapper {
     width: 708px;
-    padding-top: 62px;
   }
 
   .promo__image {
@@ -57,13 +56,39 @@
   }
 
   .promo__text {
+    text-align: left;
+    padding-left: 84px;
     color: $basic-black;
+  }
+
+  .promo__slogan {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 41px;
+  }
+
+  .promo__intro {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
   }
 
   .promo__button {
     position: absolute;
-    left: 91px;
+    top: 292px;
+    left: 90px;
     width: 244px;
+    height: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 100%;
+  }
+
+  .promo__wrapper {
+    width: 1220px;
   }
 }
 

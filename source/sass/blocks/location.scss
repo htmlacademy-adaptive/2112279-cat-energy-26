@@ -9,8 +9,30 @@
 }
 
 .location-map {
-  &--desktop {
+  &--desktop,
+  &--tablet {
     display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .location {
+    width: 100%;
+  }
+
+  .location__wrapper {
+    width: 100%;
+    height: 599px;
+  }
+
+  .location-map {
+    &--tablet {
+      display: block;
+    }
+
+    &--mobile {
+      display: none;
+    }
   }
 }
 
